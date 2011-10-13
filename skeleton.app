@@ -10,5 +10,5 @@
     "status":"stable",
     "static":"true",
     "autoInstall":true,
-    "view":"photo"
+    "viewer":"photos"
 }
