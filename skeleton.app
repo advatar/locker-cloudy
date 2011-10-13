@@ -9,5 +9,6 @@
 
     "status":"stable",
     "static":"true",
-    "autoInstall":true
+    "autoInstall":true,
+    "view":"photo"
 }
