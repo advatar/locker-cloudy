@@ -1,0 +1,15 @@
+{
+    "name": "Cloudify",
+    "description": "A 3D cloud of your most popular hashtags, weighted by count",
+    "version": "1.0.0",
+    "author": "Eric Jennings",
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://creativecommons.org/licenses/MIT/"
+    }],
+    "viewer":"links",
+    "repository":{
+        "type": "app",
+        "static":"true"
+    }
+}
