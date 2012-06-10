@@ -9,6 +9,7 @@
     }],
     "repository": {
         "title": "Cloudy",
+	    "github": "https://github.com/advatar/cloudy",
         "uses": {
             "types": [ "links" ],
             "services": [ "facebook", "twitter" ]
