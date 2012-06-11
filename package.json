@@ -1,15 +1,20 @@
 {
-    "name": "Cloudify",
+    "name": "Cloud",
     "description": "A 3D cloud of your most popular hashtags, weighted by count",
-    "version": "1.0.0",
-    "author": "advata",r
+    "version": "0.0.1",
+    "author": "advatar",
     "licenses": [{
         "type": "MIT",
         "url": "http://creativecommons.org/licenses/MIT/"
     }],
     "repository": {
-        "title": "Cloudy",
-	    "github": "https://github.com/advatar/cloudy",
+        "title": "Cloud",
+        "handle": "locker-cloud",
+	    "github": "https://github.com/advatar/locker-cloud",
+	    "url": "https://github.com/advatar/locker-cloud",
+	    "update":"auto",
+	    "static": false,
+	    "type": "app",
         "uses": {
             "types": [ "links" ],
             "services": [ "facebook", "twitter" ]
