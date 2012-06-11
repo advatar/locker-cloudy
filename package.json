@@ -1,5 +1,5 @@
 {
-    "name": "Cloud",
+    "name": "Cloudy",
     "description": "A 3D cloud of your most popular hashtags, weighted by count",
     "version": "0.0.1",
     "author": "advatar",
@@ -8,10 +8,10 @@
         "url": "http://creativecommons.org/licenses/MIT/"
     }],
     "repository": {
-        "title": "Cloud",
-        "handle": "locker-cloud",
-	    "github": "https://github.com/advatar/locker-cloud",
-	    "url": "https://github.com/advatar/locker-cloud",
+        "title": "Cloudy",
+        "handle": "locker-cloudy",
+	    "github": "https://github.com/advatar/locker-cloudy",
+	    "url": "https://github.com/advatar/locker-cloudy",
 	    "update":"auto",
 	    "static": false,
 	    "type": "app",
