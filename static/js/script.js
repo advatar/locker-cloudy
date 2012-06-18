@@ -5,6 +5,9 @@ var hashCloud = [];
 
 $(function() {
     $.getJSON(baseUrl + '/Me/links?limit=1000&full=1', function(data) {
+	    if (!data || !data.lenght || data.length==0)
+	      return;
+        var counted
         for (var i=0; i<data.length; ++i) {
             if (data[i].encounters.length === 0 ||
                 !data[i].encounters[0].via.hasOwnProperty('entities') ||
@@ -16,9 +19,9 @@ $(function() {
                 hashCloud.push(data[i].encounters[0].via.entities.hashtags[j].text.toLowerCase());
             }
             
-            var counted = countHashes(hashCloud);
+            counted = countHashes(hashCloud);
         }
-        
+        if (!counted || counted.length==0) return;
         for (var k=0; k<counted[0].length; k++) {
             if (counted[1][k] > 1 && counted[0][k].length > 1) {
                 $('#tag-links').append('<li><a target="_blank" href="/Me/linkalatte/#search-'+counted[0][k].toLowerCase()+'" data-weight="'+((+counted[1][k]+6)*1.6)+'">'+counted[0][k].toUpperCase()+'</li>');
