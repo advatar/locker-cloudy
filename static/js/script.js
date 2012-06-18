@@ -5,9 +5,12 @@ var hashCloud = [];
 
 $(function() {
     $.getJSON(baseUrl + '/Me/links?limit=1000&full=1', function(data) {
-	    if (!data || !data.lenght || data.length==0)
+	    if (!data || !data.length || data.length==0)
+	    {
+		  $("#loading-div").html('no tags');
 	      return;
-        var counted
+	   }
+       var counted;
         for (var i=0; i<data.length; ++i) {
             if (data[i].encounters.length === 0 ||
                 !data[i].encounters[0].via.hasOwnProperty('entities') ||
