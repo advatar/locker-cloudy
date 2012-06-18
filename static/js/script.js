@@ -24,7 +24,11 @@ $(function() {
             
             counted = countHashes(hashCloud);
         }
-        if (!counted || counted.length==0) return;
+        if (!counted || counted.length==0) 
+	    {
+		  $("#loading-div").html('no tags');
+	      return;
+	   }
         for (var k=0; k<counted[0].length; k++) {
             if (counted[1][k] > 1 && counted[0][k].length > 1) {
                 $('#tag-links').append('<li><a target="_blank" href="/Me/linkalatte/#search-'+counted[0][k].toLowerCase()+'" data-weight="'+((+counted[1][k]+6)*1.6)+'">'+counted[0][k].toUpperCase()+'</li>');
