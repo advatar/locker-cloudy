@@ -5,9 +5,9 @@ var hashCloud = [];
 
 $(function() {
     $.getJSON(baseUrl + '/Me/links?limit=1000&full=1', function(data) {
-	    if (!data || !data.length || data.length==0)
+	    if (true || !data || !data.length || data.length==0)
 	    {
-		  $("#loading-div").html('no tags');
+		  $("#loading-div").html('no tags found');
 	      return;
 	   }
        var counted;

@@ -1,7 +1,7 @@
 {
     "name": "Cloudy",
     "description": "A 3D cloud of your most popular hashtags, weighted by count",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "advatar",
     "licenses": [{
         "type": "MIT",
